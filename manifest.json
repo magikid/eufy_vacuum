@@ -1,0 +1,10 @@
+{
+  "domain": "eufy_vacuum",
+  "name": "Eufy Vacuum",
+  "documentation": "",
+  "issue_tracker": "https://github.com/magikid/eufy_vacuum/issues",
+  "dependencies": [],
+  "codeowners": ["@magikid"],
+  "requirements": [],
+  "version": "0.9.1"
+}
