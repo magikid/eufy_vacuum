@@ -185,7 +185,7 @@ class TuyaCipher:
                     '>IIIH', encrypted_data, 3)
                 return 15
         return 0
-        
+
 
     def decrypt(self, command, data):
         prefix_size = self.get_prefix_size_and_validate(command, data)
@@ -577,4 +577,4 @@ class TuyaDevice:
                 raise ConnectionException("Failed to send data to {}".format(
                     self)) from e
             await self.async_connect()
-            await self_.async_send(message, retries=retries - 1)
+            await self._async_send(message, retries=retries - 1)
